@@ -1,0 +1,243 @@
+.about {
+  width: 66%;
+  margin: 0 auto;
+  background-color: #fbfbfa;
+
+  .menu-logo {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3em;
+    height: 4em;
+  }
+
+  .logo {
+    position: absolute;
+    height: 4.5em;
+    width: 9.3em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    z-index: 1;
+  }
+
+  .menu {
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+  }
+
+  .no-menu {
+    display: none;
+  }
+  .visiting {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+
+    background-color: #fbfbfa;
+    border-top: 1px solid #e6e7e7;
+
+    p:first-child {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-right: 0.5em;
+    }
+  }
+
+  .mystino {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e6e7e7;
+    padding-left: 0.1rem;
+    height: 50%;
+
+    margin-right: 3.2rem;
+    p:nth-child(2) {
+      font-size: 0.9rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  p:nth-child(3) {
+    background-color: #e6e7e7;
+    padding: 0 0.2em;
+    margin: 0 0.4em;
+    font-size: 0.9rem;
+  }
+
+  .jpn-image {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+
+    img {
+      height: 50%;
+      padding-right: 0.5em;
+    }
+  }
+
+  .cash {
+    padding: 0.5em;
+    border-left: 1px solid #e6e7e7;
+  }
+
+  .red-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--rose);
+    height: 2.2em;
+
+    .red-bar-msg {
+      margin: 0 auto;
+      color: white;
+      font-size: 0.75em;
+      :first-child {
+        color: white;
+      }
+      :last-child {
+        color: #ededed;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .about-domain {
+    display: flex;
+    flex-direction: column;
+    width: 42.3%;
+
+    margin: 0.6em auto;
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 1.83em;
+    }
+    .explore {
+      font-weight: 500;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      height: 3.2em;
+
+      span {
+        color: white;
+        background-color: #e32961;
+        height: 1.7em;
+        width: 1.7em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0.6em;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        margin-left: 1.3em;
+        background-color: var(--lightGrey);
+        height: 1.6em;
+        width: 3.4em;
+        border-radius: 10%;
+      }
+
+      // :hover {
+      //   background-color: white;
+      // }
+    }
+
+    .info {
+      margin: 0 1.9em 1.9em 3.3em;
+      font-size: 1.05rem;
+    }
+  }
+
+  .com {
+    max-height: 7rem;
+    margin-top: 1rem;
+    border-radius: 3%;
+    &:hover {
+      background-color: var(--pink);
+      .extension {
+        background-color: white;
+      }
+    }
+  }
+  .jp {
+    max-height: 5.7rem;
+    margin-top: 1rem;
+    &:hover {
+      background-color: var(--pink);
+      .extension {
+        background-color: white;
+      }
+    }
+  }
+  .net {
+    max-height: 5.1rem;
+    &:hover {
+      background-color: var(--pink);
+      .extension {
+        background-color: white;
+      }
+    }
+  }
+  .org {
+    max-height: 5.8rem;
+    &:hover {
+      background-color: var(--pink);
+      .extension {
+        background-color: white;
+      }
+    }
+  }
+  .bizz {
+    max-height: 5.5rem;
+    &:hover {
+      background-color: var(--pink);
+      .extension {
+        background-color: white;
+      }
+    }
+  }
+  .last {
+    &:hover {
+      background-color: var(--pink);
+      .extension {
+        background-color: white;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    width: 80%;
+
+    .about-domain {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .about-domain {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .com {
+    margin-bottom: 2rem;
+  }
+}

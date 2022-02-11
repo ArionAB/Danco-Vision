@@ -1,0 +1,45 @@
+.login {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 3.4rem;
+  }
+
+  .email-label {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs {
+    height: 2rem;
+    border: 1px solid #e6e7e7;
+  }
+  .password {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .errors {
+    color: red;
+  }
+
+  .hasErrors {
+    border: 1px solid red;
+  }
+
+  .labels {
+    margin: 0.5rem 0;
+  }
+
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5%;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2c6eda;
+    }
+  }
+}
